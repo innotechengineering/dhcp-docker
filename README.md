@@ -11,7 +11,7 @@ i use `network manager` and my main ethernet interface on my thinkpad is named `
 2) define the dhcp.conf in the /data dir with a lease pool in the range of the defined network interface above.  
 
 3) now.. you can launch the dhcp server using the below command.  
-`docker run -it --rm --init --net host -v /home/tyson/dev/isc-dhcp-server-docker/data:/data networkboot/dhcpd net0`
+`docker run -it --rm --init --net host -v "$PWD"/data:/data networkboot/dhcpd net0`
 
 
  
